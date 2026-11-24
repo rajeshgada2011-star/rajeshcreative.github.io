@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RAJESH ENGLISH LEARNING CLUB</title>
+
+  <meta name="description" content="Learn English Grammar, Vocabulary, Speaking and Practice with Rajesh English Learning Club.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RAJESH <span>ELC</span></div>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#lessons">Lessons</a>
+    <a href="#vocabulary">Vocabulary</a>
+    <a href="#sentences">Sentences</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <p class="tag">WELCOME TO OUR LEARNING CLUB</p>
+
+  <h1>
+    Learn English<br>
+    <span>Speak Confidently!</span>
+  </h1>
+
+  <p>
+    Improve your English every day with easy lessons,
+    vocabulary, grammar and practice quizzes.
+  </p>
+
+  <a href="#lessons" class="main-btn">Start Learning →</a>
+</section>
+
+<section class="about">
+  <h2>Why Learn With Us?</h2>
+
+  <p>Learn English step by step in a simple and easy way.</p>
+
+  <div class="stats">
+    <div><h3>50+</h3><p>Lessons</p></div>
+    <div><h3>100+</h3><p>Words</p></div>
+    <div><h3>Daily</h3><p>Practice</p></div>
+  </div>
+</section>
+
+<section id="lessons" class="section">
+  <h2>English Lessons</h2>
+  <p class="subtitle">Choose a lesson and improve your English.</p>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="emoji">📘</div>
+      <h3>Basic Grammar</h3>
+      <p>Learn nouns, verbs and adjectives.</p>
+      <button onclick="showLesson('grammar')">Start Lesson</button>
+    </article>
+
+    <article class="card">
+      <div class="emoji">⏰</div>
+      <h3>English Tenses</h3>
+      <p>Understand present, past and future tenses.</p>
+      <button onclick="showLesson('tenses')">Start Lesson</button>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🗣️</div>
+      <h3>Speaking Skills</h3>
+      <p>Practice simple English conversations.</p>
+      <button onclick="showLesson('speaking')">Start Lesson</button>
+    </article>
+
+  </div>
+
+  <div id="lesson-content" class="lesson-content"></div>
+</section>
+
+<section id="vocabulary" class="section light">
+  <h2>Daily Vocabulary</h2>
+  <p class="subtitle">Learn English words with Telugu meanings.</p>
+
+  <div class="word-list">
+    <div><b>Beautiful</b><span>అందమైన</span></div>
+    <div><b>Brave</b><span>ధైర్యవంతుడు</span></div>
+    <div><b>Honest</b><span>నిజాయితీ గల</span></div>
+    <div><b>Improve</b><span>మెరుగుపరచు</span></div>
+    <div><b>Knowledge</b><span>జ్ఞానం</span></div>
+    <div><b>Success</b><span>విజయం</span></div>
+    <div><b>Believe</b><span>నమ్ము</span></div>
+    <div><b>Confidence</b><span>ఆత్మవిశ్వాసం</span></div>
+  </div>
+</section>
+
+<section id="sentences" class="section">
+  <h2>Daily Use Sentences</h2>
+  <p class="subtitle">Useful English sentences with Telugu meanings.</p>
+
+  <div class="sentence">
+    <b>How are you?</b>
+    <p>నువ్వు ఎలా ఉన్నావు?</p>
+  </div>
+
+  <div class="sentence">
+    <b>What are you doing?</b>
+    <p>నువ్వు ఏమి చేస్తున్నావు?</p>
+  </div>
+
+  <div class="sentence">
+    <b>I am learning English.</b>
+    <p>నేను ఇంగ్లీష్ నేర్చుకుంటున్నాను.</p>
+  </div>
+
+  <div class="sentence">
+    <b>Never give up.</b>
+    <p>ఎప్పుడూ ప్రయత్నం ఆపవద్దు.</p>
+  </div>
+</section>
+
+<section id="quiz" class="section light">
+  <h2>English Practice Quiz</h2>
+  <p class="subtitle">Test your English knowledge!</p>
+
+  <div class="quiz-box">
+    <p id="question-number">Question 1 of 5</p>
+
+    <h3 id="question">Loading question...</h3>
+
+    <div id="answers"></div>
+
+    <p id="quiz-result"></p>
+
+    <button id="next-btn" onclick="nextQuestion()">
+      Next Question →
+    </button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Daily Motivation</h2>
+
+  <div class="motivation">
+    "Practice makes progress. Keep learning English every day!"
+  </div>
+</section>
+
+<footer>
+  <h2>RAJESH ENGLISH LEARNING CLUB</h2>
+  <p>Learn Today • Lead Tomorrow</p>
+  <p>© 2026 Rajesh English Learning Club</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
